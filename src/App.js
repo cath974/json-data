@@ -13,9 +13,9 @@ class App extends Component {
 
       componentDidMount() {
         //Change URL laaaaaaaaaaaaaaaaa
-        axios.get(`https://jsonplaceholder.typicode.com/users/`)
+        axios.get(`https://api.edamam.com/search?q=' + mushroom + '&app_id=b8fa8ec0&app_key=2e99e135530eaed01cb9620b24c1f1c0`)
           .then(res => {
-            const users = res.data;
+            // const users = res.data;
             console.log (res.data);
     
           })
@@ -26,7 +26,7 @@ class App extends Component {
         
         <div className="App">
             <div>
-                
+                <h1>Open your consol</h1> 
             </div>
         </div>
         
